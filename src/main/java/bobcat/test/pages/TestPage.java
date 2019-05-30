@@ -20,7 +20,7 @@ public class TestPage extends AemAuthorPage<TestPage> {
   @Inject
   private BobcatWait bobcatWait;
 
-  private String title = "Home Page";
+  private String title = "English";
   private String url ;
   
 
