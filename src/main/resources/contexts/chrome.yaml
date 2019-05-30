@@ -1,2 +1,4 @@
 chrome:
   webdriver.type: chrome
+  webdriver.cap.browserName: chrome
+  
