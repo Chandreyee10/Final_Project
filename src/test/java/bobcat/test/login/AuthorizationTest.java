@@ -51,16 +51,21 @@ public class AuthorizationTest {
 		catch(Exception e) {
 			
 		}
-		
-		signinpage.open().login("admin","admin");
-		TestPage testpage = bobcatPageFactory.create("/content/etap/en.html", TestPage.class);
-		try {
-	    Thread.sleep(10000);
-		}
-		catch(Exception e) {
+		boolean flag=signinpage.open().login("admin11","admin11");
+		//signinpage.open().login("admin","admin");
+		if (flag==true)
+		{
+		   TestPage testpage = bobcatPageFactory.create("/content/etap/en.html", TestPage.class);
+		   try {
+	           Thread.sleep(10000);
+		   }
+		   catch(Exception e) {
 				
+		   }
+		   assertTrue(testpage.open().isDisplayed());
 		}
-		assertTrue(testpage.open().isDisplayed());
+		else
+			log.info("Credentials doesnot exist");
 		/*Code for Login Page end */
 		
 	}
