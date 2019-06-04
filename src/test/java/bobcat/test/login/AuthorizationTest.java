@@ -55,7 +55,7 @@ public class AuthorizationTest {
 		//signinpage.open().login("admin","admin");
 		if (flag==true)
 		{
-		   TestPage testpage = bobcatPageFactory.create("/content/etap/en.html", TestPage.class);
+		   TestPage testpage = bobcatPageFactory.create("/content/etap/en/homepage.html", TestPage.class);
 		   try {
 	           Thread.sleep(10000);
 		   }
