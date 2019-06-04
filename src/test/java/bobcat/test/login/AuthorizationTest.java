@@ -51,7 +51,7 @@ public class AuthorizationTest {
 		catch(Exception e) {
 			
 		}
-		boolean flag=signinpage.open().login("admin11","admin11");
+		boolean flag=signinpage.open().login("admin","admin");
 		//signinpage.open().login("admin","admin");
 		if (flag==true)
 		{
